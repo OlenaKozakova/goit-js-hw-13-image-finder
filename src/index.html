@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>goit-js-hw-13-image-finder</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="root">
+      <form class="search-form" id="search-form">
+        <input
+          name="query"
+          class="search-input"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Введите запрос..."
+        />
+        <button type="submit" class="search-btn btn">Поиск</button>
+      </form>
+      <p class="no-result is-hidden">Извините, но по вашему запросу нет результата. Уточните поиск</p>
+      <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+      </ul>
+
+      <button type="button" class="btn is-hidden" data-action="load-more">
+        еще...
+      </button>
+    </div>
+  </body>
+</html>
